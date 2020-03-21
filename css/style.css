@@ -1,0 +1,78 @@
+@import "font.css";
+
+*{margin:0;padding:0;font-family:"Ibm Plex Sans";list-style:none;font-size: 16px;font-weight: normal;}
+
+html{background-color:#fcfcfc;}
+
+h1{
+	text-align: center;
+	margin:20px;
+	font-size: 25px;
+}
+/* CONFIG */
+#config {
+	display: flex;
+	justify-content:space-evenly;
+}
+
+#generate,#generate_all{
+	margin: 30px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding:7px 30px;
+	background-color:#aaaaaa;
+	border-radius:5px;
+	border:none;
+	color:#000000;
+	font-size:17px;
+	cursor: not-allowed;
+}
+#generate:focus,#generate_all:focus{outline:none;}
+
+.button_active{
+	background-color:rgb(248,74,71) !important;
+	color:#ffffff !important;
+	cursor:pointer !important;
+}
+.button_active:hover{
+	background-color:rgb(208,34,31) !important;
+}
+
+.progress{
+    cursor: not-allowed !important; 
+    background-image:linear-gradient(
+        -45deg,
+        rgb(208,34,31) 25%, rgb(248,74,71) 25%,
+        rgb(248,74,71) 50%,rgb(208,34,31) 50%,
+        rgb(208,34,31) 75%,rgb(208,34,31) 100%
+    );
+    animation: animate-stripes 1s linear infinite;
+}
+
+@keyframes animate-stripes {
+    0%{background-position: 0 0;} 100% {background-position: 160px 0;}
+}
+
+/*––––––– ABC –––––––*/
+#abc{
+	/*background-color: #fcfcfc;*/
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#paper{
+	/*margin-top: 30px;*/
+	background-color: #EEE;
+	width: min-content;
+	margin: 0 auto;
+}
+
+#midi{
+	background-color: transparent;
+	width: 400px;
+	margin: 30px auto;
+}
+#midi *:focus{outline:none;}
+
+#midi-download{text-align: center;margin-bottom: 30px;}
