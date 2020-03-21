@@ -2,7 +2,7 @@
 
 ###### Description
 
-Tool used to generate midi files with a char rnn model formed from Eurovision songs
+Tool used to generate midi files with a char rnn model trained from Eurovision songs
 ![Generated Staff](readme-assets/staff1-char-rnn.png)
 
 ###### Creation of the database
