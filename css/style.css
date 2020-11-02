@@ -1,4 +1,4 @@
-@import "font.css";
+@import url('https://assets.data.bingo/font/?family=ibm-plex-sans');
 
 *{margin:0;padding:0;font-family:"Ibm Plex Sans";list-style:none;font-size: 16px;font-weight: normal;}
 
